@@ -8,7 +8,7 @@ public class GameBoard {
     */
 
     public GameBoard() {
-        this.board = new String[4][4];
+        this.board = new String[5][5];
         for (int i = 0; (this.board).length > i; i++) {
            for (int j = 0; j < (this.board[i]).length; j++) {
                this.board[i][j] = "Empty";
@@ -35,7 +35,7 @@ public class GameBoard {
         * @throws IllegalArgumentException if board is not a perfect square
         */
     
-        public GameBoard (String[][] board) throws NullPointerException, IllegalArgumentException {
+        public GameBoard (String[][] board) {
         if (board == null) {
            throw new NullPointerException("Board cannot be null");
        }
