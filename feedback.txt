@@ -1,0 +1,33 @@
+K(30%): 90
+I(30%): 70
+C(10%): 90 
+A(30%): 70
+76% of 80 - 60.8%
+
+Make sure your function names are accurate.  They should be the same casing and work exactly as outlined in the instructions.  (don't forget camelCase!)
+
+GamePiece toString should have a space in it.
+equals should take in another object to check against.  It should also use .equals for Strings, not ==.
+toString is missing bars between normal tiles, only exists when there is a piece. Also the names are reversed.
+if (board.length >=1 && board[0].length >=1) {
+           throw new IllegalArgumentException("Game board must be greater than 1:1");
+       }
+
+This is backwards, it should be when it is less than or equal to one.
+
+for (String[] x: board) {
+           if (x.length != board[0].length) {
+               throw new IllegalArgumentException ("Board must be a perfect square");
+           }
+       }
+
+Game board does not have to be a square.
+getRows and getCols should actually return the length of the rows and colomns, not 5!
+
+catch (IndexOutOfBoundsException e) {
+            System.out.println("Invalid row or column");
+        }
+Not need to do this, the person using your method would want the exception.
+Should throw not catch a null pointer exception if the placePiece is null.
+removePiece should return the piece removed.
+Javadocs for GamePiece are missing @returns.
